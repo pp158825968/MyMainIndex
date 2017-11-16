@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game name="NaughtGrid" author="pp158825968">
+	<action tips="时间的话 以帧数为计时单位  调整技能时间">
+		<damage />
+		<speed />
+		<time auto_move="15" single_direction_move="15" sleep="15" track="15"
+			fire="15" stand_fire="15" track_fire="15" earth_stay="15"
+			bullet_move="15" quake_twinkle="15" quake_up="20" quaking="30"
+			quake_down="25" quake_over="2" quake_hitted="15" player_move="15"
+			drop_star_twinkle="15" drop_star_droping="15" fly_cloud_flying="150"
+			freeze_cube="135" cold_damage="15" hot_light_long="50"
+			hot_light_move="5" hot_light_damage="10" player_dead="25"
+			player_game_over="15" player_relive="15" boss_dead="15" minion_dead="15"
+			player_kill_box="15" enemy_kill_box="15" quake_blasted="15"
+
+			boss_active="80" boss_think="1" boss_attack="320" boss_attacking="100"
+			boss_avoid="120" boss_fire="15" boss_move_path="50" minion_active="100"
+			minion_think="1" minion_attack="300" minion_attacking="150"
+			minion_avoid="100" minion_fire="20" minion_move_path="100"
+
+			rosseta_reflection="15" sparkle_sowrd="15" diamond_shower="15"
+			heart_shoot="15" quake="15" star_drop="15" fly_cloud="15" hot_light="15"
+			player_shot="15" minion_shot="20" boss_shot="15" skill_colding="120"
+			skill_hotting="50" />
+	</action>
+	<language lang="chiness,english" default_lang="chiness">
+		<chiness>
+			<key
+				introduce="操作说明:使用键盘的WASD键控制主角的行走 J键开火 K键释放技能 消灭完所有敌人能进入下一关
+			技能有冷却时间判定 暂停按P 好好享受吧:)"
+				progress="进度" level="关卡" start="开始" over="结束" know="知道了" still="继续"
+				pausing="暂停中" destruction="操作介绍" hp="血量" cd="冷却" rosseta_reflection="罗塞塔丰碑"
+				sparkle_sowrd="黑桃流星剑" diamond_shower="琉璃飞跃" heart_shoot="灼热射线" />
+		</chiness>
+	</language>
+	<levels>
+		<level id="1" tips="库与明确关卡数据的定义">
+			<map>
+				<info row_count="30" column_count="20" grid_size="20" source="" />
+				<players>
+					<player id="0" row_id="5" column_id="2" role_id="player_0" />
+				</players>
+
+				<enemies>
+					<minions>
+						<minion id="0" row_id="15" column_id="3" role_id="minion_0" />
+					</minions>
+					<bosses>
+						<boss id="0" row_id="10" column_id="15" role_id="boss_0" />
+					</bosses>
+				</enemies>
+				
+				<boxes>
+					<box id="0" row_id="0" column_id="0" role_id="box_0"/>
+				</boxes>
+				
+				<grids usual_tile_id="tile_0">
+					<grid id="0" row_id="0" column_id="0" tile_id="tile_1" tips="特殊的节点" />
+					<grid id="1" row_id="0" column_id="19" tile_id="tile_1" tips="特殊的节点" />
+					<grid id="2" row_id="29" column_id="0" tile_id="tile_1" tips="特殊的节点" />
+					<grid id="3" row_id="29" column_id="19" tile_id="tile_1" tips="特殊的节点" />
+
+				</grids>
+			</map>
+		</level>
+		<level id="2" tips="库与明确关卡数据的定义">
+			<map>
+				<info row_count="20" column_count="30" grid_size="20" source="" />
+				<players>
+					<player id="0" row_id="15" column_id="20" role_id="player_0" />
+				</players>
+
+				<enemies>
+					<minions>
+						<minion id="0" row_id="5" column_id="3" role_id="minion_0" />
+					</minions>
+					<minions>
+						<minion id="1" row_id="10" column_id="3" role_id="minion_0" />
+					</minions>
+					<bosses>
+						<boss id="0" row_id="15" column_id="25" role_id="boss_0" />
+					</bosses>
+				</enemies>
+				
+				<boxes>
+					<box id="0" row_id="0" column_id="0" role_id="box_0"/>
+				</boxes>
+				
+				<grids usual_tile_id="tile_2">
+					<grid id="0" row_id="0" column_id="0" tile_id="tile_3" tips="特殊的节点" />
+					<grid id="1" row_id="0" column_id="29" tile_id="tile_3" tips="特殊的节点" />
+					<grid id="2" row_id="19" column_id="0" tile_id="tile_3" tips="特殊的节点" />
+					<grid id="3" row_id="19" column_id="29" tile_id="tile_3" tips="特殊的节点" />
+
+				</grids>
+			</map>
+		</level>
+		<level id="3" tips="库与明确关卡数据的定义">
+			<map>
+				<info row_count="30" column_count="30" grid_size="20" source="" />
+				<players>
+					<player id="0" row_id="18" column_id="17" role_id="player_0" />
+				</players>
+
+				<enemies>
+					<minions>
+						<minion id="0" row_id="5" column_id="3" role_id="minion_0" />
+					</minions>
+					<minions>
+						<minion id="1" row_id="10" column_id="3" role_id="minion_0" />
+					</minions>
+					<minions>
+						<minion id="2" row_id="10" column_id="5" role_id="minion_0" />
+					</minions>
+					<bosses>
+						<boss id="0" row_id="16" column_id="10" role_id="boss_0" />
+					</bosses>
+				</enemies>
+				
+				<boxes>
+					<box id="0" row_id="0" column_id="0" role_id="box_0"/>
+				</boxes>
+				
+				<grids usual_tile_id="tile_4">
+					<grid id="0" row_id="0" column_id="0" tile_id="tile_5" tips="特殊的节点" />
+					<grid id="1" row_id="0" column_id="29" tile_id="tile_5" tips="特殊的节点" />
+					<grid id="2" row_id="29" column_id="0" tile_id="tile_5" tips="特殊的节点" />
+					<grid id="3" row_id="29" column_id="29" tile_id="tile_5" tips="特殊的节点" />
+					<grid id="3" row_id="15" column_id="15" tile_id="tile_2" tips="特殊的节点" />
+
+				</grids>
+			</map>
+		</level>
+
+	</levels>
+
+	<lib>
+		<skins note="角色皮肤的数据集合" simple="no.数字标记就好了">
+
+			<skin id="p0" tips="玩家普通" 
+				left_style="0xFF9999,0xFFCCCC,0xFF99CC"
+				right_style="0xFF9999,0xFF99CC,0xFFCCCC" 
+				up_style="0xFF99CC,0xFF9999,0xFFCCCC"
+				down_style="0xFF9999,0xFF99CC,0xFFCCCC" />
+				
+			<skin id="p1" tips="玩家死亡" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p2" tips="玩家受到振动伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p3" tips="玩家受到吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p4" tips="玩家受到流星伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p5" tips="玩家受到冷冻伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p6" tips="玩家射线吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p7" tips="玩家释放  罗塞塔丰碑 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p8" tips="玩家释放 黑桃流星剑 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p9" tips="玩家释放 琉璃飞跃 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p10" tips="玩家释放 灼热射线 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p11" tips="玩家所放出的地灵之爪(罗塞塔丰碑)的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p12" tips="玩家所放出的流星(黑桃流星剑)的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p13" tips="玩家所放出的飞云(琉璃飞跃)的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p14" tips="玩家所放出的冰块(琉璃飞跃)的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="p15" tips="玩家所放出的射线(灼热射线)的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+
+			<skin id="m0" tips="喽啰普通" 
+				left_style="0x990000,0x990033,0x990066"
+				right_style="0x990000,0x990066,0x990033"
+				up_style="0x990066,0x990000,0x990033"
+				down_style="0x990066,0x990033,0x990000" />
+				
+			<skin id="m1" tips="喽啰死亡" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m2" tips="喽啰受到振动伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m3" tips="喽啰受到吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m4" tips="喽啰受到流星伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m5" tips="喽啰受到冷冻伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m6" tips="喽啰射线吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m7" tips="喽啰释放  地灵之爪 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m8" tips="喽啰释放 流星时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m9" tips="喽啰释放 飞云 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m10" tips="喽啰释放 射线 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m11" tips="喽啰所放出的地灵之爪的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m12" tips="喽啰所放出的流星的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m13" tips="喽啰所放出的飞云的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m14" tips="喽啰所放出的冰块的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="m15" tips="喽啰所放出的射线的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="b0" tips="boss普通"
+				left_style="0xFFFF80,0xFFFF33,0xF2F200"
+				right_style="0xFFFF80,0xF2F200,0xFFFF33" 
+				up_style="0xF2F200,0xFFFF80,0xFFFF33"
+				down_style="0xF2F200,0xFFFF33,0xFFFF80" />
+				
+			<skin id="b1" tips="boss死亡" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b2" tips="boss受到振动伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b3" tips="boss受到吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b4" tips="boss受到流星伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b5" tips="boss受到冷冻伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b6" tips="boss射线吹飞伤害" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b7" tips="boss释放  地灵之爪 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b8" tips="boss释放 流星时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b9" tips="boss释放 飞云 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b10" tips="boss释放 射线 时的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b11" tips="boss所放出的地灵之爪的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b12" tips="boss所放出的流星的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b13" tips="boss所放出的飞云的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b14" tips="boss所放出的冰块的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+			<skin id="b15" tips="boss所放出的射线的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="bullet0" tips="玩家子弹的皮肤" 
+				left_style="0xF50A74,0xD20B42,0xEB1465"
+				right_style="0xF50A74,0xEB1465,0xD20B42" 
+				up_style="0xEB1465,0xF50A74,0xD20B42"
+				down_style="0xEB1465,0xD20B42,0xF50A74" />
+
+			<skin id="bullet1" tips="喽啰子弹的皮肤" 
+				left_style="0x804040,0x4D2626,0xBC7878"
+				right_style="0x804040,0xBC7878,0x4D2626" 
+				up_style="0xBC7878,0x804040,0x4D2626"
+				down_style="0xBC7878,0x4D2626,0x804040" />
+
+			<skin id="bullet2" tips="boss子弹的皮肤" 
+				left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" 
+				up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="quake0" tips="罗塞塔丰碑的皮肤" 
+				left_style="0xFF9900,0xFFB468,0xFF9966"
+				right_style="0xFF9900,0xFF9966,0xFFB468" 
+				up_style="0xFF9966,0xFF9900,0xFFB468"
+				down_style="0xFF9966,0xFFB468,0xFF9900" />
+
+			<skin id="quake1" tips="地灵之爪的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="quake2" tips="地灵之爪的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="star0" tips="黑桃流星剑的皮肤" 
+				left_style="0x663399,0x6633CC,0x6633FF"
+				right_style="0x663399,0x6633FF,0x6633CC" 
+				up_style="0x6633FF,0x663399,0x6633CC"
+				down_style="0x6633FF,0x6633CC,0x663399" />
+
+			<skin id="star1" tips="星陨的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="star2" tips="星陨的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="cloud0" tips="琉璃飞跃中飞云的皮肤" 
+				left_style="0x0066CC,0x0099CC,0x0066FF"
+				right_style="0x0066CC,0x0066FF,0x0099CC" 
+				up_style="0x0066FF,0x0066CC,0x0099CC"
+				down_style="0x0066CC,0x0066FF,0x0099CC" />
+
+			<skin id="cloud1" tips="飞云的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="cloud2" tips="飞云的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="ice0" tips="琉璃飞跃中冰块的皮肤" 
+				left_style="0x0099FF,0x0099FF,0x0099FF"
+				right_style="0x0099FF,0x0099FF,0x0099FF"
+				up_style="0x0099FF,0x0099FF,0x0099FF"
+				down_style="0x0099FF,0x0099FF,0x0099FF" />
+
+			<skin id="ice1" tips="冰块的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="ice2" tips="冰块的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="light0" tips="红心一击*灼热射线的皮肤" 
+				left_style="0xFF3399,0xFF33CC,0xFF66FF"
+				right_style="0xFF3399,0xFF66FF,0xFF33CC"
+				up_style="0xFF66FF,0xFF3399,0xFF33CC"
+				down_style="0xFF66FF,0xFF33CC,0xFF3399" />
+
+			<skin id="light1" tips="射线的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+			<skin id="light2" tips="射线的皮肤" left_style="0x777888,0x888888,0x999999"
+				right_style="0x888777,0x999999,0x888888" up_style="0x777666,0x999888,0x888999"
+				down_style="0x666777,0x888999,0x999888" />
+
+		</skins>
+		<sounds path="assets/media/audios/" exp=".mp3">
+			<sound id="sound_0" name="DDF" />
+			<sound id="sound_1" name="TransformOff" />
+			<sound id="sound_2" name="GetFood" />
+			<sound id="sound_3" name="FckYou" />
+			
+			<sound id="sound_4" name="InLandMiss" />
+			<sound id="sound_5" name="Jump" />
+			<sound id="sound_6" name="GetItem" />
+			<sound id="sound_7" name="AkaLin" />
+			
+			<sound id="sound_8" name="Died" />
+			<sound id="sound_9" name="InLand" />
+			<sound id="sound_10" name="BulletHitStar" />
+			<sound id="sound_11" name="BulletHitRocket" />
+		</sounds>
+		<tiles tips="砖块集合">
+			<tile id="tile_0" hp="10" power="0" style="0xE0F0E0" figure="0" tips="普通砖块" />
+			<tile id="tile_1" hp="10" power="0" style="0xE010E0" figure="-1" tips="不能行走的砖块" />
+			
+			<tile id="tile_2" hp="10" power="0" style="0xB0B0B0" figure="0" tips="普通砖块" />
+			<tile id="tile_3" hp="10" power="0" style="0x667788" figure="-1" tips="不能行走的砖块" />
+			
+			<tile id="tile_4" hp="10" power="0" style="0x489BD7" figure="0" tips="普通砖块" />
+			<tile id="tile_5" hp="10" power="0" style="0x456321" figure="-1" tips="不能行走的砖块" />
+			
+		</tiles>
+		<roles tips="角色集合">
+			<!-- 行为角色 -->
+			<role id="box_0" hp="10" power="0" style="b_1" defend="0"
+				isoLong="20" isoWidth="20" isoHeight="20" figure="0" tips="box 箱子类" />
+
+			<role id="boss_0" row_id="10" column_id="15" hp="2000" power="20"
+				defend="0" style="p_1" figure="0" tips="boss角色 0" isoLong="20"
+				isoWidth="20" isoHeight="20" skills="0,0,0,0" weapon_id="w_b_2"
+				quake_id="w_q_2" star_id="w_s_2" cloud_id="w_c_2" ice_id="w_i_2"
+				light_id="w_l_2" minProdeFeel="100" maxProdeFeel="300" attackFeel="0.75"
+				randomFeel="0.9" powerFeel="50" hpFeel="50" usual_skin_id="b0"
+				dead_skin_id="b1" injure_quake_skin_id="b2" injure_blast_skin_id="b3"
+				injure_drop_skin_id="b4" injure_cold_skin_id="b5"
+				injure_hot_skin_id="b6" attack_quake_skin_id="b7"
+				attack_star_skin_id="b8" attack_ice_skin_id="b9"
+				attack_light_skin_id="b10" skill_quake_skin_id="b11"
+				skill_star_skin_id="b12" skill_cloud_skin_id="b13"
+				skill_ice_skin_id="b14" skill_light_skin_id="b15" 
+				
+				/>
+
+			<role id="minion_0" hp="200" power="10" defend="0" style="e_1"
+				figure="-1" tips="喽啰 minion n_代表没有" isoLong="20" isoWidth="20"
+				isoHeight="20" skills="0,1,2,3" weapon_id="w_b_1" quake_id="n_w_q_1"
+				star_id="n_w_s_1" cloud_id="n_w_c_1" ice_id="n_w_i_1" light_id="n_w_l_1"
+				minProdeFeel="20" maxProdeFeel="50" attackFeel="0.5" randomFeel="0.5"
+				powerFeel="50" hpFeel="50" usual_skin_id="m0" dead_skin_id="n_m1"
+				injure_quake_skin_id="n_m2" injure_blast_skin_id="n_m3"
+				injure_drop_skin_id="n_m4" injure_cold_skin_id="n_m5"
+				injure_hot_skin_id="n_m6" attack_quake_skin_id="n_m7"
+				attack_star_skin_id="n_m8" attack_ice_skin_id="n_m9"
+				attack_light_skin_id="n_m10" skill_quake_skin_id="n_m11"
+				skill_star_skin_id="n_m12" skill_cloud_skin_id="n_m13"
+				skill_ice_skin_id="n_m14" skill_light_skin_id="n_m15" 
+				
+				/>
+
+			<role id="player_0" hp="1000" power="15"
+				defend="0" life="0" style="p_1" figure="-1" tips="player 玩家角色" isoLong="20"
+				isoWidth="20" isoHeight="20" minProdeFeel="-1" maxProdeFeel="-1"
+				attackFeel="-1" randomFeel="-1" powerFeel="-1" hpFeel="-1" skills="0,1,2,3"
+				weapon_id="w_b_0" quake_id="w_q_0" star_id="w_s_0" cloud_id="w_c_0"
+				ice_id="w_i_0" light_id="w_l_0" usual_skin_id="p0" dead_skin_id="p1"
+				injure_quake_skin_id="p2" injure_blast_skin_id="p3"
+				injure_drop_skin_id="p4" injure_cold_skin_id="p5"
+				injure_hot_skin_id="p6" attack_quake_skin_id="p7"
+				attack_star_skin_id="p8" attack_ice_skin_id="p9"
+				attack_light_skin_id="p10" skill_quake_skin_id="p11"
+				skill_star_skin_id="p12" skill_cloud_skin_id="p13"
+				skill_ice_skin_id="p14" skill_light_skin_id="p15" 
+				
+				fire_sound_id="sound_1" 
+				injured_sound_id="sound_2" 
+				dead_sound_id="sound_0" 
+				skill_sound_id="sound_3" 
+				/>
+				
+			<!-- 超杀 武器 角色 -->
+			<role id="w_b_0" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="玩家子弹" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="bullet0" />
+
+			<role id="w_b_1" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="喽啰子弹" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="bullet1" />
+
+			<role id="w_b_2" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="boss子弹" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="bullet2" />
+
+			<role id="w_q_0" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="q-代表地灵之爪" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="quake0" />
+
+			<role id="w_q_1" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="quake" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="quake1" />
+
+			<role id="w_q_2" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="star" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="quake2" />
+
+			<role id="w_s_0" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="s-代表星陨" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="star0" />
+
+			<role id="w_s_1" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="star" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="star1" />
+
+			<role id="w_s_2" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="s-代表星陨" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="star2" />
+
+			<role id="w_c_0" hp="0" power="1" defend="0" style="p_1" figure="0"
+				tips="c-代表飞云" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="cloud0" />
+
+			<role id="w_c_1" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="cloud" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="cloud1" />
+
+			<role id="w_c_2" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="c-代表飞云" isoLong="20" isoWidth="20" isoHeight="20" skills="-1"
+				weapon_id="-1" usual_skin_id="cloud2" />
+
+
+			<role id="w_i_0" hp="0" power="1" defend="0" style="p_1" figure="0"
+				tips="i-代表冰块" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="ice0" />
+
+			<role id="w_i_1" hp="0" power="1" defend="0" style="p_1" figure="0"
+				tips="ice" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="ice1" />
+
+			<role id="w_i_2" hp="0" power="2" defend="0" style="p_1" figure="0"
+				tips="ice" isoLong="20" isoWidth="20" isoHeight="1" skills="-1"
+				weapon_id="-1" usual_skin_id="ice2" />
+
+			<role id="w_l_0" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="l-代表灼热射线" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="light0" />
+
+			<role id="w_l_1" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="lgiht" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="light1" />
+
+			<role id="w_l_2" hp="0" power="0" defend="0" style="p_1" figure="0"
+				tips="lgiht" isoLong="10" isoWidth="10" isoHeight="10" skills="-1"
+				weapon_id="-1" usual_skin_id="light2" />
+		</roles>
+	</lib>
+</game>
