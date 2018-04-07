@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ShopListItemRendererSkin" states="up,down,disabled" 
+    minHeight="55" minWidth="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="200" height="60">
+    <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" alpha.disabled="0.5"
+             source="button_up_png"
+             source.down="button_down_png" alpha="0.85"/>
+	<e:Image id="thumbImage" source="{data.thumb_url}" 
+                width="50" height="50" left="5" verticalCenter="0"/>
+	<e:Group left="60" verticalCenter="0" right="5">
+		<e:Group height="50" verticalCenter="0" left="0" width="85%">
+			<e:Rect left="0" top="0" right="0" bottom="0" fillColor="0xbf4e4e" visible="false"/>
+			<e:Label id="nameLabel" size="20" horizontalCenter="0" verticalCenter="0" textColor="0xffffff"/>
+		</e:Group>
+		<e:Group width="15%" height="50" verticalCenter="0" right="0">
+			<e:Label id="countLabel" size="20" horizontalCenter="0" verticalCenter="0" textColor="0xffffff"/>
+		</e:Group>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

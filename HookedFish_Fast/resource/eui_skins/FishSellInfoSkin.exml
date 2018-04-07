@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishSellInfoSkin" width="350" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="fishThumb" width="50" height="50" x="0" y="0" alpha="1"/>
+	<e:Label id="fishLabel" text="Name" x="65" y="0" size="20" textColor="0x2c83d4"/>
+	<e:Label id="descriptionLabel" text="description" y="65" size="15" wordWrap="true" multiline="true" width="100%" minWidth="350" textColor="0x2c83d4" horizontalCenter="0" textAlign="center"/>
+	<e:Group x="65" y="32">
+		<e:Label id="qualityLabel" text="中" x="0" y="0" size="18" textColor="0x2c83d4"/>
+		<e:Label id="priceLabel" text="0" x="179.5" y="0.96" size="18" textColor="0x2c83d4"/>
+		<e:layout>
+			<e:HorizontalLayout gap="25"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UnderBarSkin" width="400" height="30" 
+	states="up,down,disabled"
+	xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="leftButton" text="-" textColor="0x000000" 
+		width="40" height="30" textAlign="center" alpha.down="0.5"
+		verticalAlign="middle" left="0" top="0" border="true" touchEnabled="true"/>
+	<e:Label id="rightButton" text="+" textColor="0x000000" height="30" textAlign="center" 
+		verticalAlign="middle" border="true" right="0" width="40" top="0"
+		alpha.down="0.5"  touchEnabled="true"/>
+</e:Skin>

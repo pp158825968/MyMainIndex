@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="260">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12"  height="260"/>
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+    <e:Button id="closeButton" label="close" bottom="15" horizontalCenter="0" alpha="1"/>
+	<e:List id="feedList" height="50" horizontalCenter="0" left="30" right="30" bottom="85">
+		<e:layout>
+			<e:HorizontalLayout gap="15"/>
+		</e:layout>
+	</e:List>
+	<e:Group left="30" top="60" right="30" horizontalCenter="0">
+		<e:Image id="feedImage" width="50" height="50" x="0" y="0"/>
+		<e:Label id="feedTipLabel" text="鱼食状态" x="60" y="5" textColor="0x2c83d4" size="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="15" verticalAlign="middle" horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

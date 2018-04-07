@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12"  alpha="0.6"/>
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+    <e:Button id="closeButton" label="close" bottom="5" horizontalCenter="0" alpha="1"
+    visible="false"/>
+	<e:Button id="sellButton" label="卖鱼" y="170" left="15"/>
+	<e:Button id="boxButton" label="放入鱼箱" y="170" horizontalCenter="0"/>
+	<e:Button id="freeButton" label="放生" y="170" right="15"/>
+	<ns1:FishSellInfo id="fishSellInfo" left="15" right="15" top="60" bottom="70"/>
+</e:Skin>

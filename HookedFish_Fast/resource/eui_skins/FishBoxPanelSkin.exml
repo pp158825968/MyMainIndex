@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="255">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+    <e:Button id="closeButton" label="close" bottom="15" horizontalCenter="0" alpha="1"
+    visible="true"/>
+	<e:List id="boxList" height="50" y="125" horizontalCenter="0" left="20" right="20">
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:List>
+	<e:Group top="60" left="20">
+		<e:Image id="boxImage" width="50" height="50" x="0" y="0"/>
+		<e:Label id="boxLabel" text="Label" x="66" y="11" textColor="0x2c83d4" size="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="15" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

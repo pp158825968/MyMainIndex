@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="450" width="500">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12"  height="400"/>
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+	<e:Group left="15" right="15" top="120" bottom="20" anchorOffsetY="0">
+		<e:Group id="buttonGroup" width="100%" bottom="0" horizontalCenter="0">
+			<e:Button id="moveLeftButton" label="&lt;" y="0" anchorOffsetX="0" width="100" anchorOffsetY="0" height="50" left="0"/>
+			<e:Button id="moveRightButton" label=">" y="0" width="100" height="50" right="0"/>
+			<e:TextInput id="pageIndexInputer" width="100" height="50" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:List id="itemList" top="65" bottom="65" left="0" right="0" horizontalCenter="0">
+			<e:layout>
+				<e:TileLayout orientation="rows" horizontalGap="5" verticalGap="5" rowHeight="55" requestedColumnCount="2" columnAlign="justifyUsingWidth"/>
+			</e:layout>
+		</e:List>
+		<e:Group x="0" y="0" width="100%">
+			<e:Button id="naviUpButton" label="&lt;" x="0" y="0"/>
+			<e:TabBar id="itemTabBar" anchorOffsetY="0" height="50" y="0" x="0" width="100%" scrollEnabled="true" includeInLayout="true" useVirtualLayout="true">
+				<e:layout>
+					<e:TileLayout requestedRowCount="1"/>
+				</e:layout>
+			</e:TabBar>
+			<e:Button id="naviDownButton" label=">" x="370" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout gap="5"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group left="15" right="15" top="55" height="50">
+		<e:Button id="mySpaceButton" label="我的老巢" y="0" left="0"/>
+		<e:Button id="shopButton" label="菜市场" y="2" horizontalCenter="0"/>
+		<e:Button id="helpButton" label="帮助" y="1" right="0" height="50"/>
+		<e:Button id="languageButton" label="LLL" x="270" y="3" height="50"/>
+		<e:layout>
+			<e:TileLayout requestedRowCount="1" orientation="rows" columnAlign="justifyUsingWidth" horizontalGap="25" rowHeight="50"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="450">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45" touchChildren="false" touchEnabled="false" touchThrough="false">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0" touchEnabled="false"/>
+    </e:Group>
+	<e:Group horizontalCenter="0" top="70">
+		<e:Label id="vividLabel" x="0" y="0" textColor="0x2c83d4" size="20"/>
+		<e:List id="vividList" width="250" height="50" x="0" y="35">
+			<e:layout>
+			<e:HorizontalLayout gap="1"/>
+			</e:layout>
+		</e:List>
+		<e:Label id="nickLabel" x="0" y="110" textColor="0x2c83d4" size="20"/>
+		<e:TextInput id="nickInput" width="200" height="50" x="0" y="145" maxChars="10"/>
+		<e:Button id="randomNickNameButton" x="230" y="145"/>
+		<e:Button id="okButton" x="4" y="215"/>
+		<e:Button id="languageButton" label="LLL" x="130" y="215"/>
+	</e:Group>
+</e:Skin>

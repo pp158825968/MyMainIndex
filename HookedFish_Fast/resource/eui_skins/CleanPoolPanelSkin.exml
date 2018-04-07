@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.CleanPoolPanelSkin" minHeight="270" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+    <e:Button id="closeButton" label="close" bottom="10" horizontalCenter="0" alpha="1"
+    visible="true"/>
+	<e:Label id="cleanLevelLabel" text="清洁度:" size="16" left="25" top="60" textColor="0x2c83d4" right="25"/>
+	<e:Label id="currentExpLabel" text="每次更新给鱼的经验值:" size="16" left="25" top="85" textColor="0x2c83d4" right="25"/>
+	<e:Label id="myCleanserLabel" text="我的清洁剂" size="16" left="25" top="120" textColor="0x2c83d4" right="25"/>
+	<e:List id="cleanserList" height="50" anchorOffsetY="0" left="25" top="145" right="25">
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:List>
+</e:Skin>
