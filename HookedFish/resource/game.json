@@ -641,7 +641,7 @@
                         "fish_box_volume":5, "thumb_url":"van_jpg"
                     },
                 "fish_box_limit_volumn":10,    
-                "strong": 10,
+                "strong": 1,
                 "strong_limit": 10,
                 "lake":"",
                 "level_id":"0",

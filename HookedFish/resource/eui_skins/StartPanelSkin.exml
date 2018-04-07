@@ -27,8 +27,8 @@
 	<e:Group id="logoGroup" left="0" right="0" top="0" bottom="0" touchThrough="false" touchEnabled="false" touchChildren="false">
 		<e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" alpha="1"/>
 		<e:Group horizontalCenter="0" top="20" bottom="20" visible="false">
-			<e:Image width="200" height="200" source="logo_jpg" top="0" horizontalCenter="0"/>
-			<e:Label text="无眠夜游偶遇江中孤瓶" textColor="0x2c83d4" top="215" left="0" textAlign="center" right="0" fontFamily="Tahoma" bold="true"/>
+			<e:Image width="200" height="200" top="0" horizontalCenter="0" source="" visible="false"/>
+			<e:Label text="无眠夜游偶遇江中孤瓶" textColor="0x2c83d4" top="215" left="0" textAlign="center" right="0" fontFamily="Tahoma" bold="true" visible="false"/>
 			<e:EditableText text="孤瓶泊流水 匆匆摆不归\n无边无际远 何处何曾追" size="25" textColor="0x2c83d4" bottom="0" top="250" right="0" left="0" multiline="true" wordWrap="true" textAlign="center" fontFamily="Tahoma" verticalAlign="justify" bold="true"/>
 			<e:layout>
 				<e:BasicLayout/>
