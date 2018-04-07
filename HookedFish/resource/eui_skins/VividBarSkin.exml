@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VividBarSkin" width="300" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" minHeight="70" minWidth="500">
+	<e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+	<e:Group left="15" top="10">
+		<e:Image id="vividImage" width="50" height="50" x="0" y="7" fillMode="scale"/>
+		<e:Label id="nickLabel" text="昵称" x="38" y="2" textColor="0x2c83d4" size="20"/>
+		<e:Label id="scoreLabel" text="分数" x="110" y="0" textColor="0x2c83d4" size="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="25" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

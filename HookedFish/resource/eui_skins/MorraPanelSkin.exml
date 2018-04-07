@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.MorraPanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+	<e:Group horizontalCenter="0" y="170">
+		<e:Button id="guessButton" label="猜!" x="0" y="1"/>
+		<e:Button id="closeButton" label="close" alpha="1" x="117" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="20"/>
+		</e:layout>
+	</e:Group>
+	<e:Group y="60" horizontalCenter="0">
+		<e:Group y="0" x="25">
+			<e:RadioButton id="paperRadio" label="包" x="0" y="0" selected="true"/>
+			<e:RadioButton id="scissorsRadio" label="剪" x="81" y="1"/>
+			<e:RadioButton id="rockRadio" label="锤" x="156" y="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="15"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="47" x="70">
+			<e:Label text="Cpu" x="0" y="0" size="18" textColor="0x2c83d4"/>
+			<e:Label id="resultLabel" text="" x="214" y="0" size="18" textColor="0x2c83d4"/>
+			<e:layout>
+			<e:HorizontalLayout gap="15"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="81" x="0" touchEnabled="false" touchChildren="false" touchThrough="false">
+			<e:ToggleSwitch id="firstSwitch" label="ToggleButton" x="0" y="0"/>
+			<e:ToggleSwitch id="secondSwitch" label="ToggleButton" x="85" y="1"/>
+			<e:ToggleSwitch id="thridSwitch" label="ToggleButton" x="177.5" y="1" selected="false"/>
+			<e:layout>
+			<e:HorizontalLayout gap="15"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="15" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

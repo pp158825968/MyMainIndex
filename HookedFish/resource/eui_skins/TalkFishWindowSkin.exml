@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TalkFishWindowSkin" width="200" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:EditableText id="talkField" width="100%" height="100%" textColor="0x000000" size="12" left="0" top="0" wordWrap="true" multiline="true" touchEnabled="false" background="false" backgroundColor="0x22aa44"/>
+</e:Skin>

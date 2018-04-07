@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="300">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+	<e:Group bottom="20" height="50" left="20" right="20">
+		<e:Button id="soundButton" label="Sound" x="0" y="0"/>
+		<e:Button id="aboutButton" label="About" x="143" y="1"/>
+		<e:Button id="languageButton" label="LLL" x="351"/>
+		<e:Button id="closeButton" label="Close" alpha="1" x="253" y="1"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="15"/>
+		</e:layout>
+	</e:Group>
+	<e:Group top="60" left="20" right="20" bottom="85">
+		<e:Button id="leftButton" label="&lt;" left="0" verticalCenter="0" width="50"/>
+		<e:EditableText id="tipLabel" text="Label" textColor="0x2c83d4" size="18" wordWrap="true" multiline="true" left="60" top="0" bottom="0" right="60" verticalAlign="middle" textAlign="left"/>
+		<e:Button id="rightButton" label="&gt;" right="0" verticalCenter="0" width="50"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

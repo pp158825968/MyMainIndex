@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="450" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="400" width="500">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <e:Group id="moveArea" left="0" right="0" top="0" height="45" touchChildren="false" touchEnabled="false" touchThrough="false">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+			
+    </e:Group>
+	<e:Button id="gotoFishButton" label="Button" width="80%" bottom="85" horizontalCenter="0"/>
+	<e:Group horizontalCenter="0" top="65">
+		<e:Label id="allLabel" text="我所支配的一切" size="20" x="0" y="0" textColor="0x2c83d4"/>
+		<e:Group x="0" y="30">
+		<e:Button id="myBoxButton" label="我的鱼箱" x="0" y="0"/>
+		<e:Button id="myBaitButton" label="我的诱饵" x="128" y="0"/>
+		<e:Button id="myItemButton" label="我的道具" x="259" y="0"/>
+		<e:Button id="myLakeButton" label="我的鱼塘" x="71" y="20"/>
+		<e:Button id="morraButton" label="猜拳" x="71" y="20"/>
+		<e:Button id="helpButton" label="帮助" x="218" y="65"/>
+		<e:Button id="aboutButton" label="About" x="380" y="65"/>
+		<e:Button id="languageButton" label="LLL" x="71" y="20"/>
+		<e:layout>
+			<e:TileLayout horizontalGap="25" verticalGap="15" requestedColumnCount="4"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

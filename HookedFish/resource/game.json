@@ -1,0 +1,782 @@
+{
+    "game" : 
+    {
+        "lang":{"default_lang":"chinese", "langs":[
+                {"type":"chinese", "sample":"中文", "url":"resource/languages/chinese.json"}, 
+                {"type":"english", "sample":"English", "url":"resource/languages/english.json"},
+                {"type":"japanese", "sample":"日本語", "url":"resource/languages/japanese.json"}
+            ]},
+        "levels":
+        [
+            {
+                "id":"0",
+                "name":"my_home",
+                "strand":"",
+                "sign":"plaza",
+                "fishes":
+                    [
+                       
+                    ],
+                "description":"my_home_descript",
+                "cost":0,
+                "image":"base_map_jpg",
+                "color":"0xDD5566",
+                "is_open":true,
+                "px":0.05,
+                "py":0.05,
+                "moratorium":0,
+                "strike":0
+            },
+            {
+                "id":"-1",
+                "name":"my_lake",
+                "strand":"",
+                "sign":"plaza",
+                "fishes":
+                    [
+                       
+                    ],
+                "description":"my_lake_descript",
+                "cost":"0",
+                "image":"base_map_jpg",
+                "color":"0xDEDEDE",
+                "is_open":false,
+                "px":0.05,
+                "py":0.85,
+                "moratorium":0,
+                "strike":0
+            },
+            {
+                "id":"-2",
+                "name":"shop_name",
+                "strand":"",
+                "sign":"plaza",
+                "fishes":
+                    [
+                       
+                    ],
+                "description":"shop_descript",
+                "cost":"0",
+                "image":"base_map_jpg",
+                "color":"0xDD5566",
+                "is_open":true,
+                "px":0.5,
+                "py":0.5,
+                "moratorium":0,
+                "strike":0
+            },
+            {
+                "id":"-3",
+                "name":"quote_name",
+                "strand":"",
+                "sign":"plaza",
+                "fishes":
+                    [
+                       
+                    ],
+                "description":"quote_name_descript",
+                "cost":"0",
+                "image":"base_map_jpg",
+                "color":"0xDD5566",
+                "is_open":true,
+                "px":0.95,
+                "py":0.95,
+                "moratorium":0,
+                "strike":0
+            },
+            {
+                "id":"1",
+                "name":"level_1_name",
+                "strand":"",
+                "sign":"fishing",
+                "fishes":
+                    [
+                        {"sign": "guppy", "id": -1},
+                        {"sign": "mary", "id": -1},
+                        {"sign": "saphire", "id": -1},
+                        {"sign": "rubine", "id": -1}
+                        
+                    ],
+                "description":"level_1_descript",
+                "cost":0,
+                "image":"base_map_jpg",
+                "color":"0xE3E3E3",
+                "line_color":"0xBB5566",
+                "is_open":true,
+                "px":0.5,
+                "py":0.05,
+                "moratorium":120,
+                "strike":1
+            },
+            {
+                "id":"2",
+                "name":"level_2_name",
+                "color":"0xE5E5E5",
+                "line_color":"0x5566BB",
+                "strand":"",
+                "sign":"fishing",
+                "fishes":[
+                        {"sign": "guppy", "id": -1},
+                        {"sign": "mary", "id": -1},
+                        {"sign": "saphire", "id": -1},
+                        {"sign": "rubine", "id": -1}
+                ],
+                "description":"level_2_descript",
+                "cost":100,
+                "is_open":false,
+                "px":0.7,
+                "py":0.3,
+                "moratorium":180,
+                "strike":6
+            },
+            {
+                "id":"3",
+                "name":"level_3_name",
+                "color":"0xD5D5D5",
+                "line_color":"0xAA99BB",
+                "strand":"",
+                "sign":"fishing",
+                "fishes":[
+                        {"sign": "guppy", "id": -1},
+                        {"sign": "mary", "id": -1},
+                        {"sign": "saphire", "id": -1},
+                        {"sign": "rubine", "id": -1}
+                ],
+                "description":"level_3_descript",
+                "cost":0,
+                "is_open":true,
+                "px":0.95,
+                "py":0.2,
+                "moratorium":150,
+                "strike":3
+            },
+            {
+                "id":"4",
+                "name":"level_4_name",
+                "color":"0x964B22",
+                "line_color":"0x9977BB",
+                "strand":"",
+                "sign":"fishing",
+                "fishes":[
+                        {"sign": "guppy", "id": -1},
+                        {"sign": "mary", "id": -1},
+                        {"sign": "saphire", "id": -1},
+                        {"sign": "rubine", "id": -1}
+                ],
+                "description":"level_4_descript",
+                "cost":0,
+                "is_open":true,
+                "px":0.3,
+                "py":0.45,
+                "moratorium":150,
+                "strike":3
+            }
+        ],
+        "quote":
+        {
+            "mono":"看得见的价格 看不见的手",
+            "guppy_low":
+                {
+                    "price":5, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.3, "rise_figue": 0.95,
+				    "rise_min_figue":1.5, "rise_max_figue":2.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1,
+				    "fall_min_figue":0.4, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFF0000"
+                },
+            "guppy_medium":
+                {
+                    "price":10, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.2, "rise_figue": 0.9,
+				    "rise_min_figue":1.1, "rise_max_figue":1.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1.1,
+				    "fall_min_figue":0.5, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFFFF00"
+                },
+            "guppy_high":
+                {
+                    "price":20, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.15, "rise_figue": 0.85,
+				    "rise_min_figue":1.2, "rise_max_figue":1.3,
+				    "stable_min_figue":0.9, "stable_max_figue":1.1,
+				    "fall_min_figue":0.6, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0x0000FF"
+                },
+            "mary_low":
+                {
+                    "price":5, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.3, "rise_figue": 0.95,
+				    "rise_min_figue":1.5, "rise_max_figue":2.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1,
+				    "fall_min_figue":0.4, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFF0000"
+                },
+            "mary_medium":
+                {
+                    "price":10, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.2, "rise_figue": 0.9,
+				    "rise_min_figue":1.1, "rise_max_figue":1.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1.1,
+				    "fall_min_figue":0.5, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFFFF00"
+                },
+            "mary_high":
+                {
+                    "price":20, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.15, "rise_figue": 0.85,
+				    "rise_min_figue":1.2, "rise_max_figue":1.3,
+				    "stable_min_figue":0.9, "stable_max_figue":1.1,
+				    "fall_min_figue":0.6, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0x0000FF"
+                },
+            "saphire_low":
+                {
+                    "price":5, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.3, "rise_figue": 0.95,
+				    "rise_min_figue":1.5, "rise_max_figue":2.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1,
+				    "fall_min_figue":0.4, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFF0000"
+                },
+            "saphire_medium":
+                {
+                    "price":10, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.2, "rise_figue": 0.9,
+				    "rise_min_figue":1.1, "rise_max_figue":1.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1.1,
+				    "fall_min_figue":0.5, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFFFF00"
+                },
+            "saphire_high":
+                {
+                    "price":20, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.15, "rise_figue": 0.85,
+				    "rise_min_figue":1.2, "rise_max_figue":1.3,
+				    "stable_min_figue":0.9, "stable_max_figue":1.1,
+				    "fall_min_figue":0.6, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0x0000FF"
+                },
+            "rubine_low":
+                {
+                    "price":5, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.3, "rise_figue": 0.95,
+				    "rise_min_figue":1.5, "rise_max_figue":2.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1,
+				    "fall_min_figue":0.4, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFF0000"
+                },
+            "rubine_medium":
+                {
+                    "price":10, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.2, "rise_figue": 0.9,
+				    "rise_min_figue":1.1, "rise_max_figue":1.5,
+				    "stable_min_figue":0.8, "stable_max_figue":1.1,
+				    "fall_min_figue":0.5, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0xFFFF00"
+                },
+            "rubine_high":
+                {
+                    "price":20, "is_evil":false, "evil_price":10,
+				    "fall_figue": 0.15, "rise_figue": 0.85,
+				    "rise_min_figue":1.2, "rise_max_figue":1.3,
+				    "stable_min_figue":0.9, "stable_max_figue":1.1,
+				    "fall_min_figue":0.6, "fall_max_figue":0.8,
+                    "max_price": 1000000, "line_color":"0x0000FF"
+                }
+
+        },
+        "role":
+        {
+            "fishes":["guppy", "mary", "saphire", "rubine"],
+            "small_fish": 
+            {
+                "genre":"fish",
+                "genre_id":"10",
+                "sign":"small_fish",
+                "id":"-1",
+                "name":"小鱼",
+                "description":"普通小鱼,价钱很低,但这却是元老级的鱼",
+                "quality": "medium",
+                "belly": 0.2,
+                "behavior":"fish",
+                "default_behavior":"think",
+                "skin":"small_fish",
+                "max_speed_value":6, "min_speed_value":2,
+                "h_strength": 0.01, "v_strength": 1,
+                "a_strength": 0.05,
+                "power":"1",
+                "hp": "100",
+                "lucky": "1",
+                "lv":"1",
+                "thumb_url": "van_jpg",
+                "enchant_time": 100,
+                "escape_value":0.01,
+                "popo_value":0.5,
+                "popo_time":800,
+                "exp":0,
+                "highExpLimit":200,
+                "mediumExpLimit":100,
+                "lowExpLimit":-10,
+                "place":"wild"
+            },
+            "guppy": 
+            {
+                "genre":"fish",
+                "genre_id":"11",
+                "sign":"guppy",
+                "id":"-1",
+                "name":"guppy_name",
+                "description":"guppy_description",
+                "quality": "medium",
+                "belly": 0.2,
+                "behavior":"fish",
+                "default_behavior":"think",
+                "skin":"guppy",
+                "max_speed_value":8, "min_speed_value":3,
+                "h_strength": 0.01, "v_strength": 1,
+                "a_strength": 0.05,
+                "power":1,
+                "hp": 100,
+                "lucky": 1,
+                "lv":1,
+                "thumb_url": "resource/hfs/fishes/guppy.png",
+                "enchant_time": 100,
+                "escape_value":0.01,
+                "popo_value":0.5,
+                "exp":0,
+                "highExpLimit":6,
+                "mediumExpLimit":4,
+                "lowExpLimit":-2,
+                "place":"wild",
+                "talk_time_min":100,
+                "talk_time_max":500,
+                "auto_move_time_min":60,
+                "auto_move_time_max":90,
+                "popo_time_min":200,
+                "popo_time_max":500,
+                "be_enchanted_time_min":100,
+                "be_enchanted_time_max":240,
+                "enchant_time_min":50,
+                "enchant_time_max":100,
+                "escape_time_min":35,
+                "escape_time_max":75,
+                "alive_time_min":30,
+                "alive_time_max":50,
+                "eat_fat_time_min":210,
+                "eat_fat_time_max":250,
+                "autoMoveWord":"autoMoveWord",
+                "autoMoveLakeHighWord":"autoMoveLakeHighWord",
+                "autoMoveLakeMediumWord":"autoMoveLakeMediumWord",
+                "autoMoveLakeLowWord":"autoMoveLakeLowWord",
+                "beEnchantedWord":"beEnchantedWord",
+                "eatBaitWord":"eatBaitWord",
+                "hookedWord":"hookedWord",
+                "escapeWord":"escapeWord",
+                "beFishedWord":"beFishedWord",
+                "aliveWord":"aliveWord",
+                "eatFeedWord":"eatFeedWord",
+                "eatFatWord":"eatFatWord",
+                "expChangeUpWord":"expChangeUpWord",
+                "expChangeDownWord":"expChangeDownWord",
+                "qualityChangeLowWord":"qualityChangeLowWord",
+                "qualityChangeMediumWord":"qualityChangeMediumWord",
+                "qualityChangeHighWord":"qualityChangeHighWord",
+                "touchWord":"touchWord",
+                "freeWord":"freeWord",
+                "shutWord":"shutWord",
+                "selledWord":"selledWord",
+
+                "eatBaitSound":"eatBaitSound",
+                "escapeSound":"escapeSound",
+                "hookedSound":"hookedSound",
+                "aliveSound":"aliveSound",
+                "beFishedSound":"beFishedSound",
+                "autoMoveSound":"autoMoveSound",
+                "beEnchantedSound":"beEnchantedSound"
+            },
+            "mary": 
+            {
+                "genre":"fish",
+                "genre_id":"12",
+                "sign":"mary",
+                "id":"-1",
+                "name":"mary_name",
+                "description":"mary_description",
+                "quality": "medium",
+                "belly": 0.25,
+                "behavior":"fish",
+                "default_behavior":"think",
+                "skin":"mary",
+                "max_speed_value":10, "min_speed_value":3,
+                "h_strength": 0.01, "v_strength": 1,
+                "a_strength": 0.02,
+                "power":1,
+                "hp": 100,
+                "lucky": 1,
+                "lv":1,
+                "thumb_url": "resource/hfs/fishes/mary.png",
+                "enchant_time": 100,
+                "escape_value":0.01,
+                "popo_value":0.5,
+                "exp":0,
+                "highExpLimit":6,
+                "mediumExpLimit":4,
+                "lowExpLimit":-2,
+                "place":"wild",
+                "talk_time_min":100,
+                "talk_time_max":500,
+                "auto_move_time_min":60,
+                "auto_move_time_max":90,
+                "popo_time_min":200,
+                "popo_time_max":500,
+                "be_enchanted_time_min":100,
+                "be_enchanted_time_max":240,
+                "enchant_time_min":50,
+                "enchant_time_max":100,
+                "escape_time_min":35,
+                "escape_time_max":75,
+                "alive_time_min":30,
+                "alive_time_max":50,
+                "eat_fat_time_min":210,
+                "eat_fat_time_max":250,
+                "autoMoveWord":"autoMoveWord",
+                "autoMoveLakeHighWord":"autoMoveLakeHighWord",
+                "autoMoveLakeMediumWord":"autoMoveLakeMediumWord",
+                "autoMoveLakeLowWord":"autoMoveLakeLowWord",
+                "beEnchantedWord":"beEnchantedWord",
+                "eatBaitWord":"eatBaitWord",
+                "hookedWord":"hookedWord",
+                "escapeWord":"escapeWord",
+                "beFishedWord":"beFishedWord",
+                "aliveWord":"aliveWord",
+                "eatFeedWord":"eatFeedWord",
+                "eatFatWord":"eatFatWord",
+                "expChangeUpWord":"expChangeUpWord",
+                "expChangeDownWord":"expChangeDownWord",
+                "qualityChangeLowWord":"qualityChangeLowWord",
+                "qualityChangeMediumWord":"qualityChangeMediumWord",
+                "qualityChangeHighWord":"qualityChangeHighWord",
+                "touchWord":"touchWord",
+                "freeWord":"freeWord",
+                "shutWord":"shutWord",
+                "selledWord":"selledWord",
+
+                "eatBaitSound":"eatBaitSound",
+                "escapeSound":"escapeSound",
+                "hookedSound":"hookedSound",
+                "aliveSound":"aliveSound",
+                "beFishedSound":"beFishedSound",
+                "autoMoveSound":"autoMoveSound",
+                "beEnchantedSound":"beEnchantedSound"
+
+            },
+            "saphire": 
+            {
+                "genre":"fish",
+                "genre_id":"13",
+                "sign":"saphire",
+                "id":"-1",
+                "name":"saphire_name",
+                "description":"saphire_description",
+                "quality": "medium",
+                "belly": 0.2,
+                "behavior":"fish",
+                "default_behavior":"think",
+                "skin":"saphire",
+                "max_speed_value":9, "min_speed_value":4,
+                "h_strength": 0.01, "v_strength": 1,
+                "a_strength": 0.05,
+                "power":1,
+                "hp": 100,
+                "lucky": 1,
+                "lv":1,
+                "thumb_url": "resource/hfs/fishes/saphire.png",
+                "enchant_time": 100,
+                "escape_value":0.01,
+                "popo_value":0.5,
+                "exp":0,
+                "highExpLimit":6,
+                "mediumExpLimit":4,
+                "lowExpLimit":-2,
+                "place":"wild",
+                "talk_time_min":100,
+                "talk_time_max":500,
+                "auto_move_time_min":60,
+                "auto_move_time_max":90,
+                "popo_time_min":150,
+                "popo_time_max":400,
+                "be_enchanted_time_min":100,
+                "be_enchanted_time_max":240,
+                "enchant_time_min":50,
+                "enchant_time_max":100,
+                "escape_time_min":35,
+                "escape_time_max":75,
+                "alive_time_min":30,
+                "alive_time_max":50,
+                "eat_fat_time_min":210,
+                "eat_fat_time_max":250,
+                "autoMoveWord":"autoMoveWord",
+                "autoMoveLakeHighWord":"autoMoveLakeHighWord",
+                "autoMoveLakeMediumWord":"autoMoveLakeMediumWord",
+                "autoMoveLakeLowWord":"autoMoveLakeLowWord",
+                "beEnchantedWord":"beEnchantedWord",
+                "eatBaitWord":"eatBaitWord",
+                "hookedWord":"hookedWord",
+                "escapeWord":"escapeWord",
+                "beFishedWord":"beFishedWord",
+                "aliveWord":"aliveWord",
+                "eatFeedWord":"eatFeedWord",
+                "eatFatWord":"eatFatWord",
+                "expChangeUpWord":"expChangeUpWord",
+                "expChangeDownWord":"expChangeDownWord",
+                "qualityChangeLowWord":"qualityChangeLowWord",
+                "qualityChangeMediumWord":"qualityChangeMediumWord",
+                "qualityChangeHighWord":"qualityChangeHighWord",
+                "touchWord":"touchWord",
+                "freeWord":"freeWord",
+                "shutWord":"shutWord",
+                "selledWord":"selledWord",
+
+                "eatBaitSound":"eatBaitSound",
+                "escapeSound":"escapeSound",
+                "hookedSound":"hookedSound",
+                "aliveSound":"aliveSound",
+                "beFishedSound":"beFishedSound",
+                "autoMoveSound":"autoMoveSound",
+                "beEnchantedSound":"beEnchantedSound"
+            },
+            "rubine": 
+            {
+                "genre":"fish",
+                "genre_id":"fish",
+                "sign":"rubine",
+                "id":"-1",
+                "name":"rubine_name",
+                "description":"rubine_description",
+                "quality": "medium",
+                "belly": 0.2,
+                "behavior":"fish",
+                "default_behavior":"think",
+                "skin":"rubine",
+                "max_speed_value":8, "min_speed_value":3,
+                "h_strength": 0.01, "v_strength": 2,
+                "a_strength": 0.05,
+                "power":1,
+                "hp": 100,
+                "lucky": 1,
+                "lv":1,
+                "thumb_url": "resource/hfs/fishes/rubine.png",
+                "enchant_time": 100,
+                "escape_value":0.01,
+                "popo_value":0.5,
+                "exp":0,
+                "highExpLimit":6,
+                "mediumExpLimit":4,
+                "lowExpLimit":-2,
+                "place":"wild",
+                "talk_time_min":200,
+                "talk_time_max":500,
+                "auto_move_time_min":50,
+                "auto_move_time_max":100,
+                "popo_time_min":200,
+                "popo_time_max":500,
+                "be_enchanted_time_min":100,
+                "be_enchanted_time_max":240,
+                "enchant_time_min":50,
+                "enchant_time_max":100,
+                "escape_time_min":35,
+                "escape_time_max":75,
+                "alive_time_min":30,
+                "alive_time_max":50,
+                "eat_fat_time_min":210,
+                "eat_fat_time_max":250,
+                "autoMoveWord":"autoMoveWord",
+                "autoMoveLakeHighWord":"autoMoveLakeHighWord",
+                "autoMoveLakeMediumWord":"autoMoveLakeMediumWord",
+                "autoMoveLakeLowWord":"autoMoveLakeLowWord",
+                "beEnchantedWord":"beEnchantedWord",
+                "eatBaitWord":"eatBaitWord",
+                "hookedWord":"hookedWord",
+                "escapeWord":"escapeWord",
+                "beFishedWord":"beFishedWord",
+                "aliveWord":"aliveWord",
+                "eatFeedWord":"eatFeedWord",
+                "eatFatWord":"eatFatWord",
+                "expChangeUpWord":"expChangeUpWord",
+                "expChangeDownWord":"expChangeDownWord",
+                "qualityChangeLowWord":"qualityChangeLowWord",
+                "qualityChangeMediumWord":"qualityChangeMediumWord",
+                "qualityChangeHighWord":"qualityChangeHighWord",
+                "touchWord":"touchWord",
+                "freeWord":"freeWord",
+                "shutWord":"shutWord",
+                "selledWord":"selledWord",
+
+                "eatBaitSound":"eatBaitSound",
+                "escapeSound":"escapeSound",
+                "hookedSound":"hookedSound",
+                "aliveSound":"aliveSound",
+                "beFishedSound":"beFishedSound",
+                "autoMoveSound":"autoMoveSound",
+                "beEnchantedSound":"beEnchantedSound"
+            },
+            "player":
+            {
+                "id":"2",
+                "name":"",
+                "sign":"player",
+                "description":"游戏玩家 第一人称视角所指向的'你'",
+                "balance":1000,
+                "behavior":"player",
+                "vivid":"",
+                "default_behavior":"think",
+                "skin":"",
+                "power":1,
+                "lucky": 1,
+                "lv":1,
+                "box":{         
+                        "genre":"cargos", "name":"fish_box_name_5", 
+                        "id":-1, "sign":"goods", "price":1000,
+                        "description":"免费赠送的鱼箱", 
+                        "fish_box_volume":5, "thumb_url":"van_jpg"
+                    },
+                "fish_box_limit_volumn":10,    
+                "strong": 10,
+                "strong_limit": 10,
+                "lake":                
+                    {
+                        "genre":"cargos", "name":"pool_ponds", "id":9, 
+                        "sign":"ponds", "price":1000,
+                        "description":"pool_ponds_description",
+                        "skin":"缩略图",
+                        "perEXP":1, "lowRebate":-1, "mediumRebate":1, "highRebate":1.5, 
+                        "cleanliness":80, "highCleanLimit":200, "mediumCleanLimit":100,
+                        "lowCleanLimit":50, "cleanLoss":3
+                    },
+                "level_id":"0",
+                "bait": "",
+                "items":
+                    [
+                        {
+                            "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                            "description":"red_bait_description",
+                            "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                            "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                            "delicious":0.2, "xTensile":10, "yTensile":10
+                        }
+                   
+                    ]        
+            },
+            "popo":
+            {
+                "skins":["popo0", "popo1"],
+                "fast_max_speed":15,
+                "fast_min_speed":10,
+                "slow_max_speed":6,
+                "slow_min_speed":3
+            }
+            
+        },
+        "skin":
+        {
+            "samll_fish":
+            {
+                "id":"0",
+                "name": "samll_fish_skin",
+                "description": "small_fish这种鱼的皮肤",
+                "body":"图形文件/龙骨文件"
+            }
+        },
+
+        "delay":
+        {
+            "price_delay":90,
+            "breed_delay":150
+        },
+
+        "shop":
+        {
+            "poundage_rate":0.01,
+            "poundage":1,
+            "subject":["all", "baits", "drags","boxes", "ponds"],
+            "bait_id_list":[0, 1, 2],
+            "cargos":
+            [
+                {
+                    "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                     "description":"red_bait_description",
+                     "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                     "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
+                      
+                },
+
+                {
+                    "genre":"cargos", "name":"yellow_bait", "id":1, "sign":"baits", "price":50,
+                     "description":"yellow_bait_description",
+                     "thumb_url":"resource/hfs/baits/yellow_thumb.png", "color":"0xEEEAAA",
+                    "skin":"resource/hfs/baits/yellow.png", "power":5, "hp": 150, "lucky": 3, "lv":2,
+                         "delicious":0.35, "xTensile":10, "yTensile":15 
+                },
+
+                {
+                    "genre":"cargos", "name":"blue_bait", "id":2, "sign":"baits", "price":100, 
+                    "description":"blue_bait_description",
+                    "thumb_url":"resource/hfs/baits/blue_thumb.png", "color":"0xAAAAEE",
+                    "skin":"resource/hfs/baits/blue.png", "power":10, "hp": 220, "lucky": 5, "lv":3,
+                         "delicious":0.5, "xTensile":15, "yTensile":25 
+                },
+
+                {"genre":"cargos", "name":"kidney_drag", "id":3, "sign":"drags", "price":10, 
+                    "description":"kidney_drag_description", "strong": 1, "thumb_url":""},
+
+                {"genre":"cargos", "name":"fish_box_name_6", "id":4, "sign":"boxes", "price":100,
+                    "description":"fish_box_name_6_description", 
+                    "fish_box_volume":6, "thumb_url":""},
+                {"genre":"cargos", "name":"fish_box_name_7", "id":5, "sign":"boxes", "price":200,
+                    "description":"fish_box_name_7_description", 
+                    "fish_box_volume":7, "thumb_url":""},
+                {"genre":"cargos", "name":"fish_box_name_8", "id":6, "sign":"boxes", "price":400,
+                    "description":"fish_box_name_8_description", 
+                    "fish_box_volume":8, "thumb_url":""},
+                {"genre":"cargos", "name":"fish_box_name_9", "id":7, "sign":"boxes", "price":800,
+                    "description":"fish_box_name_9_description", 
+                    "fish_box_volume":9, "thumb_url":""},
+                {"genre":"cargos", "name":"fish_box_name_10", "id":8, "sign":"boxes", "price":1600,
+                    "description":"fish_box_name_10_description", 
+                    "fish_box_volume":10, "thumb_url":""},
+
+                {"genre":"cargos", "name":"pool_ponds", "id":9, "sign":"ponds", "price":1000,
+                    "description":"pool_ponds_description",
+                    "skin":"",
+                    "perEXP":1, "lowRebate":-1, "mediumRebate":1, "highRebate":1.5, 
+                    "cleanliness":80, "highCleanLimit":200, "mediumCleanLimit":100,
+                    "lowCleanLimit":50, "cleanLoss":3, "thumb_url":""
+                },
+
+                {
+                    "genre":"cargos", "name":"grass_feed", "id":10, "sign":"feeds", "price":100, 
+                    "description":"grass_feed_description", "thumb_url":"",
+                    "skin":"糖果的皮肤", "exp":10
+                },
+                {
+                    "genre":"cargos", "name":"scour_cleanser", "id":11, "sign":"cleansers", "price":100, 
+                    "description":"scour_cleanser_description", "thumb_url":"",
+                    "skin":"糖果的皮肤", "cleanliness":100
+                }
+
+            ]
+
+        },
+
+        "vivid":
+        {
+            "thumbs":[
+                    {"thumb":"bili_jpg"}, {"thumb":"kazuya_jpg"}, 
+                    {"thumb":"van_jpg"}, {"thumb":"beo_jpg"}
+                ],
+            "label_color": "0x2C83D4"
+        }
+
+    }
+}

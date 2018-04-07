@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="160" width="500">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12"  alpha="0.7"/>
+    <e:Group id="moveArea" left="0" right="0" top="0" height="40" touchThrough="false" touchEnabled="false" touchChildren="false">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>
+    <e:Button id="closeButton" label="↑" bottom="0" horizontalCenter="0" alpha="1" height="40" left="0" right="0"/>
+	<e:Group left="20" right="20" height="50" verticalCenter="0">
+		<e:Button id="tipButton" label="甩钩!" x="307" y="22"/>
+		<e:Button id="useButton" label="" x="117" y="4"/>
+		<e:Button id="boxButton" label="" x="0" y="0"/>
+		<e:Button id="morraButton" label="猜拳" x="234" y="47"/>
+		<e:Button id="helpButton" label="帮助" x="240" y="8"/>
+		<e:Button id="languageButton" label="A↔文" x="7" y="71"/>
+		<e:Button id="backButton" label="→" x="270" y="65"/>
+		<e:layout>
+			<e:TileLayout horizontalGap="10" verticalGap="10" rowHeight="50" requestedRowCount="1" columnWidth="100"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

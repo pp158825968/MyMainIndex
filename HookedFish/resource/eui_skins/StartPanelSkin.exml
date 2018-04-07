@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PanelSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="350" width="500">
+    <e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" />
+    <!--<e:Group id="moveArea" left="0" right="0" top="0" height="45">
+        <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
+        <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
+                 wordWrap="false" left="15" right="5" verticalCenter="0"/>
+    </e:Group>-->
+    <e:Button id="closeButton" label="close" bottom="5" horizontalCenter="0" alpha="1"
+    visible="false"/>
+	<e:Component id="fishContainer" width="20" right="50" bottom="50" height="20"/>
+	<e:Group horizontalCenter="0" bottom="50">
+		<e:Button id="startButton" label="开始" x="0" y="0" width="200"/>
+		<e:Button id="helpButton" label="帮助" x="2" y="61" width="200"/>
+		<e:Button id="clarifyButton" label="声明" x="1" y="119" width="200"/>
+		<e:layout>
+		<e:VerticalLayout gap="5"/>
+		</e:layout>
+	</e:Group>
+	<e:Group horizontalCenter="0" top="100">
+		<e:Label id="gameLabel" text="有鱼上钩!" bold="true" y="0" x="0" textColor="0x2c83d4"/>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="45"/>
+		</e:layout>
+	</e:Group>
+	<e:Label text="Version: HFG 0.0.3\n\nAllRights." textColor="0x2c83d4" size="12" left="20" bottom="50" multiline="true" wordWrap="true"/>
+	<e:Group id="logoGroup" left="0" right="0" top="0" bottom="0" touchThrough="false" touchEnabled="false" touchChildren="false">
+		<e:Image left="0" right="0" bottom="0"  top="0" source="border_png" scale9Grid="2,2,12,12" alpha="1"/>
+		<e:Group horizontalCenter="0" top="20" bottom="20" visible="false">
+			<e:Image width="200" height="200" source="logo_jpg" top="0" horizontalCenter="0"/>
+			<e:Label text="无眠夜游偶遇江中孤瓶" textColor="0x2c83d4" top="215" left="0" textAlign="center" right="0" fontFamily="Tahoma" bold="true"/>
+			<e:EditableText text="孤瓶泊流水 匆匆摆不归\n无边无际远 何处何曾追" size="25" textColor="0x2c83d4" bottom="0" top="250" right="0" left="0" multiline="true" wordWrap="true" textAlign="center" fontFamily="Tahoma" verticalAlign="justify" bold="true"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>
