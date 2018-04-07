@@ -643,29 +643,18 @@
                 "fish_box_limit_volumn":10,    
                 "strong": 10,
                 "strong_limit": 10,
-                "lake":                
-                    {
-                        "genre":"cargos", "name":"pool_ponds", "id":9, 
-                        "sign":"ponds", "price":1000,
-                        "description":"pool_ponds_description",
-                        "skin":"缩略图",
-                        "perEXP":1, "lowRebate":-1, "mediumRebate":1, "highRebate":1.5, 
-                        "cleanliness":80, "highCleanLimit":200, "mediumCleanLimit":100,
-                        "lowCleanLimit":50, "cleanLoss":3
-                    },
+                "lake":"",
                 "level_id":"0",
                 "bait": "",
-                "items":
-                    [
-                        {
-                            "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
-                            "description":"red_bait_description",
-                            "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
-                            "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
-                            "delicious":0.2, "xTensile":10, "yTensile":10
-                        }
-                   
-                    ]        
+                "items":[
+                    {
+                        "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                        "description":"red_bait_description",
+                        "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                        "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
+                    }                    
+                ]        
             },
             "popo":
             {
