@@ -5,6 +5,7 @@
         <e:Image left="0" right="0" bottom="0"  top="0" source="header_png"/>
         <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
                  wordWrap="false" left="15" right="5" verticalCenter="0"/>
+			<e:Label id="updateLabel" size="12" fontFamily="Tahoma" textColor="0xFFFFFF" wordWrap="false" right="15" verticalCenter="0" text="x"/>
     </e:Group>
     <e:Button id="closeButton" label="close" bottom="10" horizontalCenter="0" alpha="1"
     visible="true"/>

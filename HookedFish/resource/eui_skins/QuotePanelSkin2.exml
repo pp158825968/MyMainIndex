@@ -4,7 +4,8 @@
     <e:Group id="moveArea" left="0" right="0" top="0" height="45" touchChildren="false" touchEnabled="false" touchThrough="false">
         <e:Image left="0" bottom="0"  top="0" source="header_png" width="100%"/>
         <e:Label id="titleDisplay" size="20" fontFamily="Tahoma" textColor="0xFFFFFF"
-                 wordWrap="false" left="15" verticalCenter="0" text="" width="100%"/>
+                 wordWrap="false" left="15" verticalCenter="0" text="" right="15"/>
+			<e:Label id="updateLabel" size="14" fontFamily="Tahoma" textColor="0xFFFFFF" wordWrap="false" verticalCenter="0" text="" right="15"/>
     </e:Group>
 	<e:Group left="25" right="25" top="55">
 		<e:Button id="poolsButton" label="←" x="0" y="0"/>

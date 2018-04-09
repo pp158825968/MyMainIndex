@@ -653,6 +653,34 @@
                         "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
                         "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
                          "delicious":0.2, "xTensile":10, "yTensile":10
+                    },                    
+                    {
+                        "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                        "description":"red_bait_description",
+                        "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                        "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
+                    },                    
+                    {
+                        "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                        "description":"red_bait_description",
+                        "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                        "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
+                    },                    
+                    {
+                        "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                        "description":"red_bait_description",
+                        "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                        "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
+                    },                    
+                    {
+                        "genre":"cargos", "name":"red_bait", "id":0, "sign":"baits", "price":10,
+                        "description":"red_bait_description",
+                        "thumb_url":"resource/hfs/baits/red_thumb.png", "color":"0xEEAAAA",
+                        "skin":"resource/hfs/baits/red.png", "power":1, "hp": 100, "lucky": 1, "lv":1,
+                         "delicious":0.2, "xTensile":10, "yTensile":10
                     }                    
                 ]        
             },
@@ -680,7 +708,7 @@
         "delay":
         {
             "price_delay":90,
-            "breed_delay":150
+            "breed_delay":60
         },
 
         "shop":
@@ -716,7 +744,7 @@
                          "delicious":0.5, "xTensile":15, "yTensile":25 
                 },
 
-                {"genre":"cargos", "name":"kidney_drag", "id":3, "sign":"drags", "price":10, 
+                {"genre":"cargos", "name":"kidney_drag", "id":3, "sign":"drags", "price":100, 
                     "description":"kidney_drag_description", "strong": 1, "thumb_url":""},
 
                 {"genre":"cargos", "name":"fish_box_name_6", "id":4, "sign":"boxes", "price":100,

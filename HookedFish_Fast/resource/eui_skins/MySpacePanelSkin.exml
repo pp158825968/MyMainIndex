@@ -9,7 +9,7 @@
     </e:Group>
 	<e:Button id="gotoFishButton" label="Button" width="80%" bottom="85" horizontalCenter="0"/>
 	<e:Group horizontalCenter="0" top="65">
-		<e:Label id="allLabel" text="我所支配的一切" size="20" x="0" y="0" textColor="0x2c83d4"/>
+		<e:Label id="allLabel" text="我所支配的一切" size="22" x="0" y="0" textColor="0x2c83d4"/>
 		<e:Group x="0" y="30">
 		<e:Button id="myBoxButton" label="我的鱼箱" x="0" y="0"/>
 		<e:Button id="myBaitButton" label="我的诱饵" x="128" y="0"/>

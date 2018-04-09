@@ -552,7 +552,7 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 	__extends(CleanPoolPanelSkin, _super);
 	function CleanPoolPanelSkin() {
 		_super.call(this);
-		this.skinParts = ["titleDisplay","moveArea","closeButton","cleanLevelLabel","currentExpLabel","myCleanserLabel","cleanserList"];
+		this.skinParts = ["titleDisplay","updateLabel","moveArea","closeButton","cleanLevelLabel","currentExpLabel","myCleanserLabel","cleanserList"];
 		
 		this.minHeight = 270;
 		this.minWidth = 450;
@@ -577,7 +577,7 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		t.left = 0;
 		t.right = 0;
 		t.top = 0;
-		t.elementsContent = [this._Image2_i(),this.titleDisplay_i()];
+		t.elementsContent = [this._Image2_i(),this.titleDisplay_i(),this.updateLabel_i()];
 		return t;
 	};
 	_proto._Image2_i = function () {
@@ -596,6 +596,18 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		t.left = 15;
 		t.right = 5;
 		t.size = 20;
+		t.textColor = 0xFFFFFF;
+		t.verticalCenter = 0;
+		t.wordWrap = false;
+		return t;
+	};
+	_proto.updateLabel_i = function () {
+		var t = new eui.Label();
+		this.updateLabel = t;
+		t.fontFamily = "Tahoma";
+		t.right = 15;
+		t.size = 12;
+		t.text = "x";
 		t.textColor = 0xFFFFFF;
 		t.verticalCenter = 0;
 		t.wordWrap = false;
@@ -2867,7 +2879,7 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 	_proto.allLabel_i = function () {
 		var t = new eui.Label();
 		this.allLabel = t;
-		t.size = 20;
+		t.size = 22;
 		t.text = "我所支配的一切";
 		t.textColor = 0x2c83d4;
 		t.x = 0;
@@ -3358,13 +3370,16 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		t.height = 40;
 		t.left = 0;
 		t.right = 0;
-		t.top = 0;
+		t.y = 0;
 		t.layout = this._TileLayout1_i();
 		return t;
 	};
 	_proto._TileLayout1_i = function () {
 		var t = new eui.TileLayout();
+		t.columnAlign = "left";
+		t.horizontalGap = 5;
 		t.requestedRowCount = 1;
+		t.rowAlign = "justifyUsingHeight";
 		t.rowHeight = 40;
 		return t;
 	};
@@ -3608,129 +3623,11 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		return t;
 	};
 	return QuoteGroupSkin;
-})(eui.Skin);generateEUI.paths['resource/eui_skins/QuotePanelSkin.exml'] = window.skins.PanelSkin = (function (_super) {
-	__extends(PanelSkin, _super);
-	function PanelSkin() {
-		_super.call(this);
-		this.skinParts = ["titleDisplay","moveArea","poolsButton","trendButton","helpButton","languageButton","quoteGroup"];
-		
-		this.height = 350;
-		this.minHeight = 230;
-		this.minWidth = 450;
-		this.width = 500;
-		this.elementsContent = [this._Image1_i(),this.moveArea_i(),this._Group1_i(),this.quoteGroup_i()];
-	}
-	var _proto = PanelSkin.prototype;
-
-	_proto._Image1_i = function () {
-		var t = new eui.Image();
-		t.bottom = 0;
-		t.height = 400;
-		t.left = 0;
-		t.right = 0;
-		t.scale9Grid = new egret.Rectangle(2,2,12,12);
-		t.source = "border_png";
-		t.top = 0;
-		return t;
-	};
-	_proto.moveArea_i = function () {
-		var t = new eui.Group();
-		this.moveArea = t;
-		t.height = 45;
-		t.left = 0;
-		t.right = 0;
-		t.top = 0;
-		t.elementsContent = [this._Image2_i(),this.titleDisplay_i()];
-		return t;
-	};
-	_proto._Image2_i = function () {
-		var t = new eui.Image();
-		t.bottom = 0;
-		t.left = 0;
-		t.source = "header_png";
-		t.top = 0;
-		t.percentWidth = 100;
-		return t;
-	};
-	_proto.titleDisplay_i = function () {
-		var t = new eui.Label();
-		this.titleDisplay = t;
-		t.fontFamily = "Tahoma";
-		t.left = 15;
-		t.size = 20;
-		t.text = "";
-		t.textColor = 0xFFFFFF;
-		t.verticalCenter = 0;
-		t.percentWidth = 100;
-		t.wordWrap = false;
-		return t;
-	};
-	_proto._Group1_i = function () {
-		var t = new eui.Group();
-		t.left = 25;
-		t.right = 25;
-		t.top = 55;
-		t.layout = this._TileLayout1_i();
-		t.elementsContent = [this.poolsButton_i(),this.trendButton_i(),this.helpButton_i(),this.languageButton_i()];
-		return t;
-	};
-	_proto._TileLayout1_i = function () {
-		var t = new eui.TileLayout();
-		t.columnAlign = "justifyUsingWidth";
-		t.horizontalGap = 10;
-		t.orientation = "rows";
-		t.requestedRowCount = 1;
-		t.rowHeight = 40;
-		return t;
-	};
-	_proto.poolsButton_i = function () {
-		var t = new eui.Button();
-		this.poolsButton = t;
-		t.label = "←";
-		t.x = 0;
-		t.y = 0;
-		return t;
-	};
-	_proto.trendButton_i = function () {
-		var t = new eui.Button();
-		this.trendButton = t;
-		t.label = "走势图";
-		t.x = 221;
-		t.y = 0;
-		return t;
-	};
-	_proto.helpButton_i = function () {
-		var t = new eui.Button();
-		this.helpButton = t;
-		t.label = "Help";
-		t.x = 335;
-		t.y = 0;
-		return t;
-	};
-	_proto.languageButton_i = function () {
-		var t = new eui.Button();
-		this.languageButton = t;
-		t.label = "A↔文";
-		t.x = 110;
-		t.y = 0;
-		return t;
-	};
-	_proto.quoteGroup_i = function () {
-		var t = new QuoteGroup();
-		this.quoteGroup = t;
-		t.bottom = 80;
-		t.horizontalCenter = 0;
-		t.left = 25;
-		t.right = 25;
-		t.top = 105;
-		return t;
-	};
-	return PanelSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/QuotePanelSkin2.exml'] = window.skins.PanelSkin = (function (_super) {
 	__extends(PanelSkin, _super);
 	function PanelSkin() {
 		_super.call(this);
-		this.skinParts = ["titleDisplay","moveArea","poolsButton","trendButton","helpButton","languageButton","quoteTabBar","quoteDataGroup"];
+		this.skinParts = ["titleDisplay","updateLabel","moveArea","poolsButton","trendButton","helpButton","languageButton","quoteTabBar","quoteDataGroup"];
 		
 		this.height = 350;
 		this.minHeight = 230;
@@ -3761,7 +3658,7 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		t.touchChildren = false;
 		t.touchEnabled = false;
 		t.touchThrough = false;
-		t.elementsContent = [this._Image2_i(),this.titleDisplay_i()];
+		t.elementsContent = [this._Image2_i(),this.titleDisplay_i(),this.updateLabel_i()];
 		return t;
 	};
 	_proto._Image2_i = function () {
@@ -3778,11 +3675,23 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		this.titleDisplay = t;
 		t.fontFamily = "Tahoma";
 		t.left = 15;
+		t.right = 15;
 		t.size = 20;
 		t.text = "";
 		t.textColor = 0xFFFFFF;
 		t.verticalCenter = 0;
-		t.percentWidth = 100;
+		t.wordWrap = false;
+		return t;
+	};
+	_proto.updateLabel_i = function () {
+		var t = new eui.Label();
+		this.updateLabel = t;
+		t.fontFamily = "Tahoma";
+		t.right = 15;
+		t.size = 14;
+		t.text = "";
+		t.textColor = 0xFFFFFF;
+		t.verticalCenter = 0;
 		t.wordWrap = false;
 		return t;
 	};
@@ -5186,7 +5095,7 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		
 		this.height = 400;
 		this.minHeight = 230;
-		this.minWidth = 450;
+		this.minWidth = 650;
 		this.elementsContent = [this._Image1_i(),this.moveArea_i(),this.closeButton_i(),this.quoteChart_i()];
 	}
 	var _proto = PanelSkin.prototype;
@@ -5251,6 +5160,58 @@ generateEUI.paths['resource/eui_skins/AboutPanelSkin.exml'] = window.skins.Panel
 		return t;
 	};
 	return PanelSkin;
+})(eui.Skin);generateEUI.paths['resource/eui_skins/TrendTabItemRendererSkin.exml'] = window.skins.ItemRendererSkin = (function (_super) {
+	__extends(ItemRendererSkin, _super);
+	function ItemRendererSkin() {
+		_super.call(this);
+		this.skinParts = ["labelDisplay"];
+		
+		this.minHeight = 50;
+		this.minWidth = 100;
+		this.elementsContent = [this._Image1_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_Image1","source","button_down_png")
+				])
+			,
+			new eui.State ("disabled",
+				[
+					new eui.SetProperty("_Image1","alpha",0.5)
+				])
+		];
+	}
+	var _proto = ItemRendererSkin.prototype;
+
+	_proto._Image1_i = function () {
+		var t = new eui.Image();
+		this._Image1 = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(1,3,8,8);
+		t.source = "button_up_png";
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.bottom = 8;
+		t.fontFamily = "Tahoma";
+		t.left = 8;
+		t.right = 8;
+		t.size = 14;
+		t.text = "x";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.top = 8;
+		t.verticalAlign = "middle";
+		return t;
+	};
+	return ItemRendererSkin;
 })(eui.Skin);generateEUI.paths['resource/eui_skins/UnderBarSkin.exml'] = window.UnderBarSkin = (function (_super) {
 	__extends(UnderBarSkin, _super);
 	function UnderBarSkin() {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="QuoteChartSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0xf6fbfd"/>
-	<e:TabBar id="chartTabBar" height="40" left="0" right="0" top="0">
+	<e:TabBar id="chartTabBar" height="40" y="0" left="0" right="0">
 		<e:layout>
-			<e:TileLayout rowHeight="40" requestedRowCount="1"/>
+			<e:TileLayout rowHeight="40" requestedRowCount="1" columnAlign="left" rowAlign="justifyUsingHeight" horizontalGap="5"/>
 		</e:layout>
 	</e:TabBar>
 	<e:Group id="chartGroup" left="0" right="0" top="50" bottom="0">
