@@ -111,8 +111,8 @@
             {
                 "id":"2",
                 "name":"level_2_name",
-                "color":"0xE5E5E5",
-                "line_color":"0x5566BB",
+                "color":"0x5A5A5A",
+                "line_color":"0xE5E5E5",
                 "strand":"",
                 "sign":"fishing",
                 "fishes":[
