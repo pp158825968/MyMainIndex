@@ -39,7 +39,7 @@
                 "description":"my_lake_descript",
                 "cost":"0",
                 "image":"base_map_jpg",
-                "color":"0xDEDEDE",
+                "color":"0xFAEBDF",
                 "is_open":false,
                 "px":0.05,
                 "py":0.85,
